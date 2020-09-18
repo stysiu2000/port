@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/navigation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/about.css" />
+    <link rel="stylesheet" href="/style/bar.css">
+    <link rel="stylesheet" href="/style/interest.css" />
+    <link rel="stylesheet" href="/style/middleimage.css" />
+    <link rel="stylesheet" href="/style/form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/jquery.scrollTo.min.js"></script>
+    <script>
+    jQuery(function ($) {
+      //zresetuj scrolla
+      $.scrollTo(0);
+  
+      $(".kontakt").click(function (e) {
+          e.preventDefault();
+          $.scrollTo($(".contact"), 800);
+          $('#menuToggle > input').click();
+      });
+  
+      $(".omnie").click(function (e) {
+          e.preventDefault();
+          $.scrollTo($(".about"), 800);
+          $('#menuToggle > input').click();
+      });
+     
+  
+  
+  
+  
+  });
+  
+  //pokaż podczas przewijania
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) $(".scrollup").fadeIn();
+      else $(".scrollup").fadeOut();
+  });
+
+</script>
+  </head>
+  <body>
+    <div class="status"></div>
+    <section class="nav-header">
+      <header class="header">
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="omnie"><a href="#">O mnie</a></li>
+            <li class="kontakt"><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="header-all">
+          <div class="header-describe">
+            <h1>Cześć, <br />cieszę się że tu trafiłeś!</h1>
+          </div>
+
+          <img src="image/ja2.png" />
+        </div>
+      </header>
+    </section>
+    <section class="about">
+      <div class="about-header">
+        <div class="about-me">
+          <div class="header-me-img">
+            <h1 class="header-me">Kilka słów o mnie</h1>
+            <img src="image/wzór.png" />
+          </div>
+          <p>
+            Mam na imię Bartek i mam 20 lat. W maju 2020r skończyłem Technikum
+            budownictwa w Przemyślu. Od października zaczynam studia w Krakowie. Cały mój wolny czas poświęcam na naukę
+            programowania. Moję wykształcenie może świadczyć o tym że potrafię
+            pracować fizycznie oraz umysłem. Od kilku lat jeżdzę na prace
+            sezonowe do Norwegii. Oceniając siebie, myślę że jestem osobą
+            cierpliwą, wytrwałą, dążącą do celu. Osobiście mam kochaną
+            dziewczynę i kochanego bratanka Wojtusia.
+          </p>
+        </div>
+        <div class="img-about">
+          <img src="image/kropki2.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="interest">
+      <div class="header-interest">
+        <h1>Poniżej przedstawiam moje zainteresowania</h1>
+      </div>
+      <div class="interest-all">
+        <div class="first-interest">
+          <div class="border-image-interest">
+            <img src="image/programowanie.jpg" class="image-test" />
+           </div>
+          <figcaption>Programowanie</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              <p>
+                Programowaniem zainspirował mnie mój starszy brat, któremu
+                jestem bardzo wdzięczny. Naukę zacząłem w 2019r, ale niestety
+                nie taką intensywną jakbym sobie to wyobrażał ze względu na inne
+                obowiązki.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/góry.jpg" class="image-test" />
+          </div>
+          <figcaption>Góry</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              <p>
+                Bardzo duży sentyment posiadam w górach Bieszczadach. Od dziecka
+                rodzice dawali mi tą przyjemność i zabierali mnie właśnie w te
+                góry za co im bardzo dziękuję
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/budownictwo.jpg" class="image-test" />
+          </div>
+          <figcaption>Budownictwo</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              <p>
+                Budownictwem oraz nieruchomościami zacząłem interesować się w
+                szkole średniej. Jeśli plany w przyszłości mi się zmienią, to
+                nie wykluczam studiów Budownictwa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="interest-all">
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/gitara.jpg" class="image-test" />
+          </div>
+          <figcaption>Gra na gitarze</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              <p>
+                Naukę gry na gitarze zaczynałem mając 15lat, lecz dopiero od 18
+                roku życia gram regularnie i myślę że dobrze mi idzie
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/iluzja.jpg" class="image-test" />
+          </div>
+          <figcaption>Iluzja</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              <p>
+                Iluzją interesowałem się od zawsze, więc postanowiłem wziąć się za naukę, poznałem wiele
+                sztuk iluzji z perspektywy iluzjonisty. Głównie wykonuję
+                tricki karciane. Zdarzyło mi się kilka razy wystąpić przed sporą publicznością
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/kostkarubika.jpg" class="image-test" />
+          </div>
+          <figcaption>Kostka Rubika</figcaption>
+          <div class="middle">
+            <div class="text">
+              <p></p>
+                Kostkę Rubika układam na czas od około dziesięciu lat.
+                Trenowałem po klika godzin dziennie aż w końcu udało mi się
+                zejść z czasami poniżej 20 sekund
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="interest-all">
+        <div class="first-interest">
+          <div class="border-image-interest">
+              <img src="image/narty.jpg" class="image-test" />
+          </div>
+          <figcaption>Narty</figcaption>
+          <div class="middle">
+            <div class="text">
+              
+              <p>Pierwszy raz na nogach miałem narty w wieku sześciu lat. Bardzo polecam ten rodzaj sportu każdemu</p>
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/rolki.jpg" class="image-test" />
+          </div>
+          <figcaption>Rolki</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              
+              <p>Pierwsze rolki dostałem na komunię i od tamtej pory jeżdzę regularnie, lecz od 2019 roku preferuję styl jazdy "freestyle"</p>
+
+             
+            </div>
+          </div>
+        </div>
+        <div class="first-interest">
+          <div class="border-image-interest">
+             <img src="image/szachy.jpg" class="image-test" />
+          </div>
+          <figcaption>Szachy</figcaption>
+
+          <div class="middle">
+            <div class="text">
+              
+              <p>Grę w szachy nauczył mnie tata jak miałem około 6-7 lat. W moim życiu byłem już na kilku zawodach, które udało mi się wygrać i zająć pierwsze miejsce. </p>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- <section class="contact">
+      <div class="all-contact">
+        <div class="describe-contact">
+          <h1>Jeśli zainteresowała Cię moja osoba, zapraszam do kontaktu</h1>
+        </div>
+        <form class="formularz">
+          <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" placeholder="Wpisz Imię" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" placeholder="Wpisz adres email" />
+          </div>
+          <div class="form-message">
+            <label for="message">Wiadomość</label>
+            <textarea
+              type="text"
+              id="message"
+              rows="7"
+              name="message"
+              placeholder="Napisz wiadomość"
+            ></textarea>
+          </div>
+          <div class="btn-submit">
+            <button type="submit">Wyślij</button>
+          </div>
+        </form>
+      </div>
+      
+    </section> -->
+
+ 
+    
+    <section class="footer"> 
+      
+      <div class="contact">
+          <h1>Jeśli jesteś zainteresowany współpracą ze mną, zapraszam do kontaktu pod numerem telefonu:<br><br> <a class="phone" href="tel: 534562152">534562152</a> </h1>
+      </div>  
+      <p>
+      Copyright &copy; Design: <a
+        href="https://www.facebook.com/profile.php?id=100002787445460"
+        target="_blank"
+      > 
+         barstys</a
+      >
+    </p>
+    </section> 
+
+ 
+
+    
+     
+     
+     <script src="script/scrollTo.js"></script>
+      <script src="script/scroll.js"></script>
+    <script src="script/bar.js"></script>
+  </body>
+</html>

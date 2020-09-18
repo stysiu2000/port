@@ -1,0 +1,141 @@
+.about {
+  background: #f4f4f4;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  .about .about-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about .about-header .about-me {
+  padding: 3rem;
+  z-index: 1;
+  width: 60%;
+}
+
+@media all and (max-width: 1024px) {
+  .about .about-header .about-me {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+.about .about-header .about-me::before {
+  content: "";
+  position: absolute;
+  background-color: #fdd833;
+  width: 290px;
+  height: 70px;
+  margin-top: 3px;
+  z-index: -1;
+}
+
+@media all and (max-width: 768px) {
+  .about .about-header .about-me::before {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.about .about-header .about-me h1 {
+  font-size: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1200px) {
+  .about .about-header .about-me h1 {
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about .about-header .about-me h1 {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+}
+
+.about .about-header .about-me p {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@media all and (max-width: 1200px) {
+  .about .about-header .about-me p {
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about .about-header .about-me p {
+    font-size: 20px;
+  }
+}
+
+.about .about-header .about-me .header-me-img {
+  display: -webkit-box;
+}
+
+.about .about-header .about-me .header-me-img img {
+  width: 30%;
+  margin-top: -50px;
+}
+
+@media all and (max-width: 1500px) {
+  .about .about-header .about-me .header-me-img img {
+    display: none;
+  }
+}
+
+.about .about-header .img-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-header .img-about img {
+  width: 90%;
+}
+
+@media all and (max-width: 1024px) {
+  .about .about-header .img-about img {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about .about-header .img-about img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=about.css.map */

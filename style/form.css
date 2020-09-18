@@ -1,0 +1,166 @@
+.contact {
+  max-width: 1500px;
+  margin: 200px auto;
+}
+
+@media all and (max-width: 768px) {
+  .contact {
+    margin: 50px auto;
+  }
+}
+
+.contact .all-contact {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.contact .all-contact .describe-contact {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.contact .all-contact .formularz .form-group label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact .all-contact .formularz .form-group input {
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.contact .all-contact .formularz .form-group input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-group input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-group input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-group input::placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-message label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact .all-contact .formularz .form-message #message {
+  width: 100%;
+  padding: 17px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact .all-contact .formularz .form-message #message::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-message #message:-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-message #message::-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .formularz .form-message #message::placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.contact .all-contact .btn-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.contact .all-contact .btn-submit button {
+  padding: 15px 70px;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  border: 1px solid #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.contact .all-contact .btn-submit button:hover {
+  background: rgba(0, 0, 0, 0.048);
+}
+
+.footer {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+.footer .contact {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+  .footer .contact {
+    font-size: 20px;
+  }
+}
+
+.footer .contact .phone {
+  text-decoration: underline;
+}
+
+.footer p {
+  padding: 20px;
+  border-top: 1px solid #000;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: #000;
+}
+/*# sourceMappingURL=form.css.map */

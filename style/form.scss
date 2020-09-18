@@ -1,0 +1,134 @@
+.contact {
+    max-width: 1500px;
+    margin: 200px auto;
+
+    @media all and(max-width: 768px) {
+        margin: 50px auto;
+    }
+
+
+    .all-contact {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 100px;
+
+
+        .describe-contact {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .formularz {
+
+
+
+            .form-group {
+
+
+                label {
+                    display: flex;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+
+                }
+
+                input {
+                    width: 100%;
+                    padding: 17px;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+
+
+                    &::placeholder {
+                        font-size: 18px;
+                        color: #000;
+                    }
+                }
+
+
+            }
+
+            .form-message {
+                label {
+                    display: flex;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                #message {
+                    width: 100%;
+                    padding: 17px;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+
+                    &::placeholder {
+                        font-size: 18px;
+                        color: #000;
+
+                    }
+                }
+            }
+
+
+        }
+
+        .btn-submit {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            button {
+                padding: 15px 70px;
+                font-size: 18px;
+                background: #fff;
+                border: none;
+                border: 1px solid #000;
+                transition: .3s;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.048);
+
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+
+    .contact {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media all and(max-width: 768px) {
+            font-size: 20px;
+        }
+
+        .phone {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        padding: 20px;
+        border-top: 1px solid #000;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+}

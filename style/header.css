@@ -1,0 +1,134 @@
+.header {
+  background-image: linear-gradient(120deg, white, white 60%, #fdd833 60%, #fdd833);
+  height: 100vh;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .header-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+@media all and (max-width: 768px) {
+  .header .header-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header .header-all .header-describe {
+  font-size: 50px;
+  position: relative;
+  top: -50px;
+  line-height: 1;
+}
+
+@media all and (max-width: 1024px) {
+  .header .header-all .header-describe {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header .header-all .header-describe {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header .header-all .header-describe {
+    font-size: 20px;
+  }
+}
+
+.header .header-all img {
+  width: 40%;
+  margin-left: 200px;
+}
+
+@media all and (max-width: 1200px) {
+  .header .header-all img {
+    width: 50%;
+    margin-left: 100px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header .header-all img {
+    width: 60%;
+    margin-left: 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header .header-all img {
+    width: 70%;
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header .header-all img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-describe::before {
+  content: "";
+  position: absolute;
+  background-color: #fdd833;
+  width: 430px;
+  height: 82px;
+  margin-top: 70px;
+  z-index: -1;
+}
+
+@media all and (max-width: 1024px) {
+  .header-describe::before {
+    width: 200px;
+    margin-top: -20px;
+    margin-left: -15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header-describe::before {
+    width: 90px;
+    height: 40px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

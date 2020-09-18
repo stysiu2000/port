@@ -1,0 +1,83 @@
+.interest {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.interest .header-interest {
+  text-align: left;
+  padding: 50px;
+  font-size: 25px;
+}
+
+@media all and (max-width: 768px) {
+  .interest .header-interest {
+    font-size: 20px;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+.interest .header-interest::before {
+  content: "";
+  position: absolute;
+  background-color: #fdd833;
+  width: 250px;
+  height: 80px;
+  margin-top: -30px;
+  z-index: -1;
+}
+
+@media all and (max-width: 768px) {
+  .interest .header-interest::before {
+    width: 180px;
+    height: 60px;
+    margin-top: -20px;
+  }
+}
+
+.interest .interest-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 1024px) {
+  .interest .interest-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.interest .interest-all .first-interest {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media all and (max-width: 1024px) {
+  .interest .interest-all .first-interest {
+    margin: 0;
+  }
+}
+
+.interest .interest-all .first-interest img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.interest .interest-all .first-interest figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.interest .interest-all .first-interest .border-image-interest {
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  padding: 10px;
+}
+/*# sourceMappingURL=interest.css.map */
