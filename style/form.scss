@@ -103,7 +103,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: #fff;
+
 
 
     .contact {
@@ -119,6 +119,25 @@
 
         .phone {
             text-decoration: underline;
+            z-index: 2;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: rgb(253, 216, 51);
+                width: 280px;
+                height: 82px;
+                margin-top: -20px;
+                margin-left: -25px;
+                z-index: -1;
+
+                @media all and(max-width: 768px) {
+                    width: 180px;
+                    height: 50px;
+                    margin-top: -5px;
+                    margin-left: -14px;
+                }
+            }
         }
     }
 
